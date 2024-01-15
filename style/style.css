@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("../images/Animation\ Tech\ GIF\ by\ Butlerm\ -\ Find\ &\ Share\ on\ GIPHY.gif");
+    /* background-color: rgba(0, 0, 0, 0.941); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.941);
+}
+
+#logo{
+    margin: 1%;
+    margin-left: 80px;
+    width: 60px;
+    height: auto;
+}
+
+nav{
+float: right;
+margin: 30px 60px;
+}
+
+nav>a{
+    padding: 8px;
+    border: solid white;
+    margin: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav>a:hover{
+    font-size: large;
+    color: rgb(255, 0, 0) ;
+    transition: 200ms;
+}
+
+.side{
+    color: white;
+    margin: 100px;
+    float: left;
+}
+
+.login{
+    margin: 80px;
+    background-color: beige;
+    padding: 60px;
+    color: black;
+    float: right;
+}
+
+.login>h2{
+    text-align: center;
+    padding: 0 0  60px 0;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+  }
+  
+  .flex-container > div {
+    margin: 10px;
+    background-color: #f1f1f1;
+    border: solid rgb(255, 255, 255);
+    padding: 20px;
+    
+
+  }
+
+  .flex-container > div>span{
+    color: red;
+  }
+
+  .flex-container > div>h2{
+    font-size: medium;
+    text-align: center;
+  }
+
+.login>button{
+    background-color: aqua;
+}
+
+.text_fields>div{
+    padding: 0 0 30px;
+}
+.content_cont{
+    display: flex;
+    justify-content: space-between;
+
+}
+/* .header_cont{
+
+} */
+
+.button {
+    background-color: #fffb01;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 40px;
+    cursor: pointer;
+  }
