@@ -8,17 +8,36 @@ body{
     /* background-color: rgba(0, 0, 0, 0.941); */
     background-size: cover;
     background-repeat: no-repeat;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
 }
 
 header{
     background-color: rgba(0, 0, 0, 0.941);
 }
 
+.header_cont{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.801);
+
+}
+
+.img_cont{
+    padding: 15px 0 0 0;
+}
+
+
+
 #logo{
     margin: 1%;
     margin-left: 80px;
-    width: 60px;
+    padding-top: 5px;
+    width: 48px;
     height: auto;
+}
+
+.nav-link_cont{
+    margin: 0 90px 0 0;
 }
 
 nav{
@@ -50,7 +69,7 @@ nav>a:hover{
 
 .login{
     margin: 80px;
-    background-color: beige;
+    background-color: white;
     padding: 60px;
     color: black;
     float: right;
@@ -58,13 +77,39 @@ nav>a:hover{
 
 .login>h2{
     text-align: center;
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
     padding: 0 0  60px 0;
 }
 
+.login input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #00aeff23;
+
+}
+
+.login label{
+    font-size: medium;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+
+
+
 .flex-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+   
+  
     
   }
   
@@ -86,24 +131,45 @@ nav>a:hover{
     text-align: center;
   }
 
-.login>button{
-    background-color: aqua;
-}
+/* .login>button{
+   
+} */
 
 .text_fields>div{
     padding: 0 0 30px;
 }
 .content_cont{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% auto;
+    /* display: flex;
+    justify-content: space-between; */
 
 }
+
+.content_cont li{
+    list-style: none;
+    font-size: 1.5em;
+    padding: 10px 0 10px 0;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content_cont h1{
+    font-size: 4em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+
+
+
 /* .header_cont{
 
 } */
 
 .button {
-    background-color: #fffb01;
+    background-color: red;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -111,6 +177,13 @@ nav>a:hover{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 40px;
+    margin: 4px 40px 20px;
     cursor: pointer;
+    border-radius: 12px;
+    
+  }
+
+  .signup_cont{
+    display: flex;
+    
   }
